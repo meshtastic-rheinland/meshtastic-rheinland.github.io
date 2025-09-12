@@ -1,6 +1,6 @@
 title: Meshtastic Rheinland
 description: Infos, Setup und Community-Links für Meshtastic im Rheinland
-url: https://your-username.github.io/meshtastic-rheinland
+url: https://meshtastic-rheinland.github.io
 baseurl: ""
 
 # GitHub Pages + Remote Theme
@@ -11,7 +11,6 @@ plugins:
 color_scheme: dark
 
 logo: /assets/logo.svg
-favicon_ico: /assets/favicon.ico
 
 search: true
 aux_links:
@@ -32,9 +31,8 @@ callouts:
 
 nav_external_links:
   - title: GitHub Repo
-    url: https://github.com/your-username/meshtastic-rheinland
+    url: https://github.com/meshtastic-rheinland/meshtastic-rheinland.github.io
 
 # Site variables (easy to maintain)
 whatsapp_invite_url: "# BITTE ERSETZEN: https://chat.whatsapp.com/DEIN-EINLADUNGS-LINK"
 public_mqtt_note: ""
-

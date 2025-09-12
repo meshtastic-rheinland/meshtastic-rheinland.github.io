@@ -15,7 +15,9 @@ Willkommen zur inoffiziellen Community-Seite für Meshtastic im Rheinland. Hier 
 - Starte mit der offiziellen App/Firmware: siehe „Setup“ unten
 - Trete der Community bei: siehe „Community“
 
-{% include callout.html type="warning" title="Achtung: Lokale Vorschriften" content="Bitte beachte lokale Funkrichtlinien (z. B. Duty Cycle im 868‑MHz‑Band). Stelle in Meshtastic die richtige Region ein und nutze angemessene Sendeleistung. Details siehe Radio‑Konfiguration in der Meshtastic‑Doku." %}
+> Achtung: Lokale Vorschriften
+> Bitte beachte lokale Funkrichtlinien (z. B. Duty Cycle im 868‑MHz‑Band). Stelle in Meshtastic die richtige Region ein und nutze angemessene Sendeleistung. Details siehe Radio‑Konfiguration in der Meshtastic‑Doku.
+{: .warning }
 
 ## Schnellstart
 
@@ -37,4 +39,3 @@ Mehr Details findest du in Setup.
 
 - Setup (EU/DE‑Settings, Tipps): siehe „Setup“
 - Community & Kontakt: siehe „Community“
-
