@@ -1,19 +1,27 @@
 title: Meshtastic Rheinland
-description: Infos, Setup und Community-Links für Meshtastic im Rheinland
+description: "Meshtastic im Rheinland: Einstiegsinfos, ShortSlow‑Profil (EU868), WhatsApp‑Community mit über 200 Mitgliedern und Hinweise für Köln, Düsseldorf, Bonn, Aachen, Wuppertal, Leverkusen, Krefeld, Mönchengladbach u. a."
 url: https://meshtastic-rheinland.github.io
 baseurl: ""
+lang: de
 
 # GitHub Pages + Remote Theme
 remote_theme: just-the-docs/just-the-docs
 plugins:
   - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-include-cache
 
 color_scheme: dark
 
 logo: /assets/logo.svg
 
-search: true
+search: false
+search_enabled: false
 aux_links:
+  Mesh Map:
+    - https://example.com/mesh-map
+  WhatsApp Community:
+    - "# BITTE ERSETZEN: https://chat.whatsapp.com/DEIN-EINLADUNGS-LINK"
   Meshtastic Documentation:
     - https://meshtastic.org/docs
   Meshtastic Forum:
@@ -32,7 +40,19 @@ callouts:
 nav_external_links:
   - title: GitHub Repo
     url: https://github.com/meshtastic-rheinland/meshtastic-rheinland.github.io
+  - title: Mesh Map
+    url: https://example.com/mesh-map
+  - title: WhatsApp Community
+    url: "# BITTE ERSETZEN: https://chat.whatsapp.com/DEIN-EINLADUNGS-LINK"
 
 # Site variables (easy to maintain)
 whatsapp_invite_url: "# BITTE ERSETZEN: https://chat.whatsapp.com/DEIN-EINLADUNGS-LINK"
+mesh_map_url: "https://example.com/mesh-map"
 public_mqtt_note: ""
+
+# Footer note
+back_to_top: true
+back_to_top_text: "Nach oben"
+
+footer_content: >-
+  Rheinland nutzt als Standard das LoRa‑Profil <a href="#shortslow">ShortSlow</a>.

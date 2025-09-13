@@ -1,0 +1,157 @@
+// Farb-Branding und moderne UI-Anpassungen für just-the-docs
+
+$brand-color: #67ea94; // Meshtastic Primary
+$link-color: $brand-color;
+$site-title-color: #ffffff;
+
+// Links in der Hauptspalte auf Primärfarbe setzen
+.main-content a {
+  color: $brand-color;
+}
+.main-content a:hover {
+  filter: brightness(1.08);
+}
+
+// Kopfbereich / Top-Navigation ausblenden für Head-Nav-Layout
+.site-header,
+#jtd-head-nav-stylesheet~.site-header,
+.aux-nav,
+.aux-nav-list,
+.site-header .aux-nav,
+[aria-label="Auxiliary Navigation"] {
+  display: none !important;
+}
+
+// Seitenleiste (Side-Bar) vollständig ausblenden, Inhalt auf volle Breite
+.side-bar,
+.site-nav {
+  display: none !important;
+}
+
+.main {
+  margin-left: 0 !important;
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto !important;
+}
+
+// Suchleiste/Überreste des Such-UI ausblenden
+.search,
+.site-header .search,
+.js-search,
+.search-input,
+#search-input,
+.search-results,
+.search-label,
+.search-icon,
+form[role="search"] {
+  display: none !important;
+}
+
+// Obere Abstände korrigieren, wenn Header entfällt
+.main {
+  padding-top: 1.25rem !important;
+}
+
+.main-header {
+  display: none !important;
+}
+
+// Buttons
+.btn {
+  display: inline-block;
+  padding: 0.55rem 0.9rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: linear-gradient(135deg, rgba(103, 234, 148, 0.95), rgba(56, 179, 120, 0.95));
+  color: #fff !important;
+  font-weight: 600;
+  text-decoration: none !important;
+  box-shadow: 0 4px 18px rgba(103, 234, 148, 0.35);
+}
+
+.btn:hover {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff !important;
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+.btn+.btn {
+  margin-left: .5rem;
+}
+
+// Hero
+.hero {
+  margin: 1rem 0 2rem;
+  padding: 2.25rem 1.5rem;
+  border-radius: 12px;
+  background: radial-gradient(1200px 420px at 0% -20%, rgba(103, 234, 148, 0.25), transparent),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero h1 {
+  margin: 0 0 .35rem;
+  font-size: clamp(1.8rem, 2.6vw, 2.6rem);
+}
+
+.hero p {
+  margin: 0.25rem 0 0.9rem;
+  color: var(--body-text-color, #cbd5e1);
+  font-size: 1.05rem;
+}
+
+// Dezentes Wasserzeichen mit Meshtastic-Logo im Hero
+.hero::after {
+  content: "";
+  position: absolute;
+  right: -40px;
+  bottom: -60px;
+  width: min(42vw, 420px);
+  height: min(42vw, 420px);
+  background: url("https://meshtastic.org/design/logo/svg/Mesh_Logo_Black.svg") no-repeat center / contain;
+  opacity: 0.085;
+  filter: invert(1) brightness(1.2);
+  pointer-events: none;
+}
+
+// Section-Abstände und Überschriften leicht modernisieren
+.main-content h2 {
+  margin-top: 2rem;
+}
+
+.main-content {
+  line-height: 1.65;
+}
+
+// Callouts tighter spacing
+.callout {
+  border-radius: 10px;
+}
+
+// Footer dezenter
+.site-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+// Responsiv kleine Tweaks
+@media (min-width: 768px) {
+  .hero {
+    padding: 2.75rem 2rem;
+  }
+}
+
+// Leichte Hintergrundstruktur für die Seite
+body {
+  background-image:
+    radial-gradient(1200px 600px at 10% -10%, rgba(103, 234, 148, 0.08), transparent),
+    radial-gradient(1200px 600px at 110% -20%, rgba(56, 179, 120, 0.06), transparent);
+  background-attachment: fixed;
+}
