@@ -44,10 +44,12 @@ Mehr Details findest du in Setup‑Basics weiter unten.
 
 Im Rheinland nutzen wir einheitlich das Modem‑Profil „ShortSlow“. Das sorgt für gute Reichweite bei vertretbarem Durchsatz und erleichtert die Interoperabilität im Mesh.
 
-> Warum ShortSlow?
-> - robuste Reichweite in urbanen und hügeligen Gebieten
-> - geringe Airtime, bessere Mesh‑Durchdringung
-> - einheitliche Basis für Events und Community‑Tests
+> Warum ShortSlow im Rheinland?
+> - **Getestet und bewährt:** In mehreren Community-Tests als optimal ermittelt
+> - **Nicht der Standard:** Wichtig für neue Nutzer - NICHT die Meshtastic-Standardeinstellung verwenden!
+> - **Rheinland-optimiert:** Robuste Reichweite in urbanen und hügeligen Gebieten
+> - **Mesh-Performance:** Geringe Airtime, bessere Netzwerk-Durchdringung
+> - **Community-Standard:** Einheitliche Basis für alle 200+ Mitglieder
 {: .note }
 
 So stellst du es ein:
@@ -101,14 +103,29 @@ Köln, Düsseldorf, Bonn, Aachen, Wuppertal, Leverkusen, Krefeld, Mönchengladba
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebSite",
+  "@type": "Organization",
   "name": "Meshtastic Rheinland",
   "url": "https://meshtastic-rheinland.github.io/",
   "inLanguage": "de",
-  "about": {
-    "@type": "Thing",
-    "name": "Meshtastic im Rheinland (Köln, Düsseldorf, Bonn, Aachen)"
-  }
+  "description": "LoRa Mesh Netzwerk Community im Rheinland mit ShortSlow-Profil und über 200 Mitgliedern",
+  "areaServed": {
+    "@type": "Place",
+    "name": "Rheinland, Deutschland",
+    "containsPlace": [
+      {"@type": "City", "name": "Köln"},
+      {"@type": "City", "name": "Düsseldorf"},
+      {"@type": "City", "name": "Bonn"},
+      {"@type": "City", "name": "Aachen"}
+    ]
+  },
+  "memberOf": {
+    "@type": "Organization",
+    "name": "Meshtastic Community",
+    "url": "https://meshtastic.org"
+  },
+  "sameAs": [
+    "https://meshmap.meshtastic.org"
+  ]
 }
 </script>
 
@@ -118,11 +135,7 @@ Köln, Düsseldorf, Bonn, Aachen, Wuppertal, Leverkusen, Krefeld, Mönchengladba
 - Radio‑Konfiguration: https://meshtastic.org/docs/configuration/radio/
 - Getting Started: https://meshtastic.org/docs/getting-started/
 
-### Suchbegriffe (lokal)
-
-Zur leichteren Auffindbarkeit erscheinen hier relevante Begriffe: meshtastic köln, meshtastic düsseldorf, meshtastic bonn, meshtastic aachen, meshtastic wuppertal, meshtastic leverkusen, meshtastic krefeld, meshtastic mönchengladbach, meshtastic neuss, meshtastic rhein‑erft, meshtastic rhein‑sieg, meshtastic bergisch gladbach, meshtastic rheinland.
-
-## Fragen? {#faq}
+## Fragen & Support {#support}
 
 - Funkregeln beachten (Duty Cycle im 868‑MHz‑Band).
 - Probleme beim Einstieg? Frag in der WhatsApp‑Gruppe.
